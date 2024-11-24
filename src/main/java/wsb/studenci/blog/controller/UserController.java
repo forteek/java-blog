@@ -10,8 +10,8 @@ import wsb.studenci.blog.model.request.user.CreateUserRequest;
 import wsb.studenci.blog.repository.UserRepository;
 
 
-@Controller // This means that this class is a Controller
-@RequestMapping(path="/users") // This means URL's start with /demo (after Application path)
+@Controller
+@RequestMapping(path="/users")
 public class UserController {
     private @Autowired UserRepository userRepository;
 
