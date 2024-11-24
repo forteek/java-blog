@@ -1,4 +1,4 @@
-package wsb.studenci.blog.Entity;
+package wsb.studenci.blog.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,6 +11,8 @@ public class User {
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
 
+    private String login;
+
     private String name;
 
     public Integer getId() {
@@ -19,6 +21,14 @@ public class User {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
     }
 
     public String getName() {
